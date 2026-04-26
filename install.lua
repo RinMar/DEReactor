@@ -20,7 +20,7 @@ startup = http.get(startupURL)
 startupFile = startup.readAll()
 
 
-local file2 = fs.open("startup", "w")
+local file2 = fs.open("startup.lua", "w")
 file2.write(startupFile)
 file2.close()
 
